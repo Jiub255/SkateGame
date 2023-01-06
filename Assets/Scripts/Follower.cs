@@ -6,13 +6,13 @@ using UnityEngine;
 public class Follower : MonoBehaviour
 {
     [SerializeField]
-    private Transform player;
+    private Transform followTarget;
 
     [SerializeField]
     private Vector3 offset;
 
     private void Update()
     {
-        transform.position = player.position + offset;
+        transform.position = followTarget.position + offset;
     }
 }

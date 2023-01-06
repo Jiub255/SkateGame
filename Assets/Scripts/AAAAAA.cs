@@ -28,9 +28,24 @@ public class AAAAAA
                 At most for the board/player movement/jump/roll downhill, have the tricks and stuff be non-physics based though.
             Have a crouch and ollie/trick animation, and a bunch of board trick/attack animations.
             
+        Movement
+            Have a physics ball rolling as base.
+            Have board follow that
+            Have leges attached to board and to body
+            Body always stays straight
+            Make this all work together
+            From the ball's contact point with the ground, send out two raycasts. One from half a board length behind, one the same length ahead.
+                Raycasts shoot straight down, and where they hit the ground is where you position the boards wheels. 
+                Body always stays straight and lined up with center of ball (height changes depending on crouching, jumping, normal, etc.)
+                Legs attach to the bottom of torso and where feet go on board.
+            
+        Comedically gory in general.
         Go along a often downhill course, jump over shit, grind stuff, bomb hills.
         Do tricks to kill enemies, also use melee weapons/guns.
             Like a 360 shove it to chop off an enemies head
+        Start with maybe just one trick, then learn more as you progress
+            Also upgrade tricks. Start with shove-it, upgrade to 360, 540, 720 etc.
+            Same with like double kickflip, double impossible, stomp harder/more air with pogo
         Tricks give some sort of power.
             Use that power for special tricks/attacks?
         Enemies and crashing cause damage.
@@ -71,6 +86,11 @@ public class AAAAAA
                 Pogo - On their heads. Could chain for combos. 
             Can chain tricks together or with each other
                 ex: Impossible, pogo, pogo, shove it. Or whatever.
+
+        W / Swipe Up - Impossible/Uppercut Slap
+        A / Swipe Left (Back) - 360 (720, more?) Shove-it/Slice Through Body
+        S / Swipe Down - Pogo/Head Bounce/Stab
+        D / Swipe Right (Forward) - Kickflip/Stab Into Body (Then land on and yank out)
 
         L Shift + other keys - Grinds
         
